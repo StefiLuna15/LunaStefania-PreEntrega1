@@ -1,11 +1,18 @@
+let iniciar = true
+
+
+while(iniciar) {
 let comprar = prompt("Bienvenid@ a Fontana de Luna. Elegí tu opción de compra \n1-Combo Matero \n2-Agenda \n3-Botella Deportiva \n4-Vaso con Sorbete")
 let resultado = 0
 let cantidad = 0
 let totalFinal = 0
 
+
+//Funcion para definir el costo total
 function multiplicar(precio, cantidad){
     resultado = precio * cantidad
 }
+
 
 switch(comprar){
     case "1":
@@ -31,3 +38,6 @@ switch(comprar){
     default:
         alert("No se encontró el producto. Elegí opción 1, 2, 3 o 4")   
 }
+}
+
+alert("Gracias por visitar Fontana de Luna!!! Te esperamos la próxima :)")
